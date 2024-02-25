@@ -42,7 +42,7 @@ lifestyleForm.addEventListener("submit", e => {
     emailjs.send(lifestyleserviceID, lifestyletemplateID, inputFields)
     .then(() => {
         // changing button text
-        lifestylesubmitBtn.innerText = "Message Sent Successfully";
+        lifestylesubmitBtn.innerText = "Posted Successfully, Waiting Aproval..";
         
         // let clear all inputs 
         lifestyleForm.reset();

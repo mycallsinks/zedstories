@@ -43,7 +43,7 @@ partnerForm.addEventListener("submit", e => {
     emailjs.send(partnerserviceID, partnertemplateID, inputFields)
     .then(() => {
         // changing button text
-        partnersubmitBtn.innerText = "Message Sent Successfully";
+        partnersubmitBtn.innerText = "Posted Successfully, Waiting Aproval..";
         
         // let clear all inputs 
         partnerForm.reset();

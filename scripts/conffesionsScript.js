@@ -41,7 +41,7 @@ contactForm.addEventListener("submit", e => {
     emailjs.send(conffessserviceID, conffesstemplateID, inputFields)
     .then(() => {
         // changing button text
-        confesssubmitBtn.innerText = "Message Sent Successfully";
+        confesssubmitBtn.innerText = "Conffessed Successfully, Waiting Aproval.. ";
         
         // let clear all inputs 
         contactForm.reset();
