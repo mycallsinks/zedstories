@@ -1,0 +1,43 @@
+/* 
+.headers{
+  position: fixed;
+  z-index: 1000 !important;
+  width: 100% !important; 
+  margin: 0 auto !important;
+  transition: all 0.2s ease-in-out;
+} */
+
+
+.headers {
+  position: fixed; /* Initially relative */
+  z-index: 1000;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.fixed {
+  position: fixed; /* After scrolling, fixed position */
+  top: 0;
+  left: 0;
+}
+
+
+
+
+/* for all sections */
+
+.row {
+  transition: all .3s ease-out;
+  transform: translateY(5%);
+  opacity: 0;
+}
+.row:nth-of-type(even) {
+  transform: translateY(5%);
+}
+
+.row.animate {
+  transform: translateY(0);
+  opacity: 1;
+}

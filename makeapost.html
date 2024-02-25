@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- description -->
+    <meta name="description" content="Create and share your thoughts, stories, and experiences with the world. Start writing your next post here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>ZedStories Make a Post</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- fonts icons start-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
+
+
+    <!-- font family -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,450,500,520,550,600,700,900,1000">
+
+    <!-- styles start-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/animation.css">
+    <link rel="stylesheet" href="./styles/makeapost.css">
+    <!-- styles end -->
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css">
+
+    <!-- jQuery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- email js -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="hold_header headers  d-flex justify-content-center">
+        <header class="container-lg m-0">
+            <!-- <div class="first_header"> -->
+            <nav class="navbar">
+                <div class="container-fluid p-0">
+                    <div class="logo navbar-brand">
+                        <h1 class="doc_logo">
+                            <a href="./index.html">Zed<span id="special">Stories</span></a>
+                        </h1>
+                    </div>
+                    <div class="logo">
+                        <p class="lead fw-bold whats_trending">
+                            <!-- Lets hear it 😜 -->
+                        </p>
+                    </div>
+                </div>
+            </nav>
+            <!-- </div> -->
+
+            <!-- bootstrap nav bar -->
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid p-0">
+                    <!-- custome d-block d-md-none -->
+                    <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- custome d-block d-md-none -->
+                    <form class="d-flex d-block d-md-none" role="search">
+
+                        <input class="form-control me-2 border" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <!-- custome  d-none d-md-flex-->
+                    <div class="collapse navbar-collapse d-md-flex" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-sm-flex flex-md-row">
+                            <li class="nav-item ">
+                                <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./conffesions.html">CONFESSIONS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./findapartener.html">PARTNER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./lifestyle.html">LIFESTYLE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./makeapost.html">make a post</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./about.html">ABOUT</a>
+                            </li>
+                        </ul>
+                        <form class="d-none d-md-flex" role="search">
+                            <input class="form-control me-2 searching_button" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- navBar -->
+
+    <section class="home_about" id="home_about">
+        <div class="wrapper box">
+            <h1> make a post</h1>
+            <p>CATEGORY > post</p>
+            <p>confess, find a partner, encourage.</p>
+        </div>
+    </section>
+
+    <section class="container-lg articles makeapost">
+
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-12 col-md-8 px-0 mb-3">
+                    <div class="d-flex p-2 main_color text-white mb-2 ">Contribute to ZedStories with your post in
+                    </div>
+
+                    <!-- accodion for categories -->
+
+                    <div class="accordion" id="accordionExample">
+
+                        <!-- accordion for conffesions -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    CONFESSIONS
+                                </button>
+                            </h2>
+
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+
+                                <!-- accordion body -->
+                                <div class="accordion-body ">
+
+
+                                    <form class="was-validated conffesions_form">
+
+                                        <div class="mb-3">
+                                            <label for="validationServerUsername" class="form-label">Username or Full
+                                                names</label>
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                                <input type="text" class="form-control is-invalid username"
+                                                    id="validationServerUsername"
+                                                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                                                    required>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="validationServerUsername" class="form-label">Location ( either name of university or city) </label>
+                                            <div class="input-group has-validation">
+
+                                                <input type="text" class="form-control is-invalid location"
+                                                    id="validationServerUsername"
+                                                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="e.g Mulungushi University"
+                                                    required>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email address
+                                                (optional)</label>
+                                            <input type="email" class="form-control email_address" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <div class="">Choose image (optional)</div>
+                                            <input type="file" class="form-control images" aria-label="file example">
+
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="validationTextarea" class="form-label">Textarea</label>
+                                            <textarea class="form-control message" id="validationTextarea"
+                                                placeholder="Entire Confession" required></textarea>
+                                            <div class="invalid-feedback">
+                                                reveal your darkest secrets, hidden crushes, and betrayals. Unburden your soul in this sacred space.
+                                            </div>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input border"
+                                                id="validationFormCheck1" required>
+                                            <label class="form-check-label" for="validationFormCheck1">Accept to our
+                                                terms and conditions</label>
+
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button class="btn btn-primary submitbtn" type="submit" 
+                                            id="confession_submit">Submit</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion for lifestyle -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    LIFESTYLE
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+
+                                <!-- accordion body -->
+                                <div class="accordion-body">
+
+                                    <form class="was-validated lifestyle_form">
+                                        <div class="col-12">
+                                            <label for="validationServerUsername" class="form-label">Username or Full names</label>
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                                <input type="text" class="form-control is-invalid username"
+                                                    id="validationServerUsername"
+                                                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                                                    required>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="validationServerUsername" class="form-label">Location ( either name of university or city) </label>
+                                            <div class="input-group has-validation">
+
+                                                <input type="text" class="form-control is-invalid location"
+                                                    id="validationServerUsername"
+                                                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="e.g Mulunugushi University" 
+                                                    required>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <label for="validationServerUsername" class="form-label">Title of the
+                                                Archivement/Encouraging talk</label>
+                                            <div class="input-group has-validation">
+
+                                                <input type="text" class="form-control is-invalid tittle"
+                                                    id="validationServerUsername"
+                                                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                                                    required>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email address
+                                                (optional)</label>
+                                            <input type="email" class="form-control email_adress" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Phone Number
+                                                (optional)</label>
+                                            <input type="phone" class="form-control phoneNumber" id="exampleFormControlInput1"
+                                                placeholder="+260 ---------">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="">Choose image (optional)</div>
+                                            <input type="file" class="form-control image" aria-label="file example">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="validationTextarea" class="form-label">Encourage us</label>
+                                            <textarea class="form-control lifestyle_message" id="validationTextarea"
+                                                placeholder="Full story here" required></textarea>
+                                            <div class="invalid-feedback">
+                                                Share your triumphs, your victories, and your journey. Inspire others with your achievements, your resilience, and your perseverance. Let your words be a beacon of hope, guiding others through their own challenges.
+                                            </div>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input border"
+                                                id="validationFormCheck1" required>
+                                            <label class="form-check-label" for="validationFormCheck1">Accept to our
+                                                terms and conditions</label>
+
+                                        </div>
+
+
+
+                                        <div class="col-12">
+                                            <button class="btn btn-primary submit_lifeStyle" type="submit" id="lifestyle_submit">Submit</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion for find a partner -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    PARTNER
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+
+                                <!-- accordion body -->
+                                <div class="accordion-body">
+
+
+                                    <form class="was-validated partner_form">
+
+
+
+                                        <div class="mb-3">
+                                            <label for="validationServerUsername" class="form-label">Full names</label>
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                                <input type="text" class="form-control is-invalid username"
+                                                    id="validationServerUsername"
+                                                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                                                    required>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="validationServerUsername" class="form-label">Location ( either name of university or city) </label>
+                                            <div class="input-group has-validation">
+
+                                                <input type="text" class="form-control is-invalid location"
+                                                    id="validationServerUsername"
+                                                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="e.g Mulunugushi University" 
+                                                    required>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="validationServerUsername" class="form-label">Partner ( e.g -
+                                                looking for a girlfriend/boyfriend)</label>
+                                            <div class="input-group has-validation">
+
+                                                <input type="text" class="form-control is-invalid typegirlorboy"
+                                                    id="validationServerUsername"
+                                                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                                                    required>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control email_adress" id="exampleFormControlInput1"
+                                                placeholder="name@example.com" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Phone
+                                                Number</label>
+                                            <input type="phone" class="form-control phoneNumber" id="exampleFormControlInput1"
+                                                placeholder="+260 ---------" required>
+                                        </div>
+
+
+
+                                        <div class="mb-3">
+                                            <label for="formFileMultiple" class="form-label">Choose your images ( one or
+                                                more)</label>
+                                            <input class="form-control images" type="file" id="formFileMultiple" multiple
+                                                required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="validationTextarea" class="form-label">
+                                                Your type
+                                            </label>
+                                            <textarea class="form-control partner_message" id="validationTextarea"
+                                                placeholder="example- i'm mycall looking for a girl aged --- who is  --- and so on"
+                                                required></textarea>
+                                            <div class="invalid-feedback">
+                                                Here, paint a picture of yourself, your desires, and your dreams of companionship. Describe the partner you seek with honesty and clarity. Whether it's shared interests, common values, or a spark of chemistry, articulate what you're looking for with sincerity. Let your words pave the path to connection and possibility.
+                                            </div>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input border"
+                                                id="validationFormCheck1" required>
+                                            <label class="form-check-label" for="validationFormCheck1">Accept to our
+                                                terms and conditions</label>
+
+                                        </div>
+
+
+
+                                        <div class="col-12">
+                                            <button class="btn btn-primary submit_partner" type="submit" id="partner_submit">Submit</button>
+                                        </div>
+                                    </form>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4  aside m-0">
+
+
+                    <div class="d-flex p-2 main_color text-white mb-2">Advertise your bussiness with us</div>
+
+                    <!-- adverts for now -->
+
+                    
+
+
+                    <div class="card mb-3 advert_card">
+                        <img src="./assets/advert_image.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fiero Technologies</h5>
+                            <p class="card-text">
+                                Elavate your online presence to the new heights. We design in custom web solutions
+                                tailored to your unique need
+                            </p>
+                            <a href="https://michaelsinkamba.com/" class="btn btn-primary advert_link" target="_blank"
+                            >Contact Fiero Technologies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_wrapper">
+            <div class="first">
+                <div class="logo">
+                     <h1 class="doc_logo">
+                            <a href="./index.html"><span id="special">Zed</span><span id="special2">Stories</span></a>
+                     </h1>
+                    <p>ZedStories: Where Confessions, Partnerships, and Lifestyle Collide</p>
+                </div>
+
+                <div class="have_questions">
+                    <h3>Have Questions about  <a href="./index.html"><span id="special">Zed</span><span id="special2">Stories</span></a></h3>
+                    <ul>
+                        <li class="fa-fade">
+                            <i class="fa-solid fa-globe"></i>
+                            <a href="https://michaelsinkamba.com/">michaelsinkamba.com</a>
+                        </li>
+                        <li class="fa-fade">
+                            <i class="fa-solid fa-phone"></i>
+                            +260 974286888
+                        </li>
+                        <li class="fa-fade">
+                            <i class="fa-regular fa-envelope"></i>
+                            michaelsinkamba211@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second">
+                <div class="links">
+                    <h3>Quick Links</h3>
+                    <ul>
+ 
+                        <li class="nav-item ">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class=" active" aria-current="page" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class="" href="./conffesions.html">CONFESSIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class=" active" aria-current="page" href="./findapartener.html">PARTNER</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class="" href="./lifestyle.html">LIFESTYLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class="" href="./makeapost.html">make a post</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class=" active" aria-current="page" href="./about.html">ABOUT</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sumary_services">
+                    <h3>Make a post</h3>
+                    <ul>
+                        <li>
+                            <a href="./makeapost.html">
+                                <i class="fa-solid fa-beat-fade fa-arrow-right"></i>conffesions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./makeapost.html">
+                                <i class="fa-solid fa-beat-fade fa-arrow-right"></i>lifestyle
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./makeapost.html">
+                                <i class="fa-solid fa-beat-fade fa-arrow-right"></i>partner
+                                mology
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="third">
+                <div class="our_recent_blog">
+                    <h3>Recent Blog</h3>
+                    <div class="first_recent_blog">
+                        <div class="image one">
+
+                        </div>
+                        <div class="contents">
+                            <p class="content">
+                                MODERN DATING GAME
+                            </p>
+                            <p class="links">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Feb 03, 2024 <br>
+                                <i class="fa-solid fa-user-tie"></i> Unknown
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="second_recent_blog">
+                        <div class="image two">
+
+                        </div>
+                        <div class="contents">
+                            <p class="content">
+                                THE SILENT ECHOES OF PARENTAL ABSENCE
+                            </p>
+                            <p class="links">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Feb 13, 2024 <br>
+                                <i class="fa-solid fa-user-tie"></i> Admin
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth">
+                <div class="subscribe">
+                    <h3 class="open">Subscribe</h3>
+                    <p>
+                        get  notified about the latest conffesions
+                    </p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" id="email" placeholder="Enter email address" required>
+                        <button onclick="changeSub()">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="all_rights">
+
+            <p class="desktop_view">
+                Copyright ©2024 All rights reserved
+            <p id="tab_break">
+                | This template is developed  By <span>- </span>
+            <p class="phone_break">
+                
+                Michael Sinkamba
+            </p>
+            </p>
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <script src="./scripts/animation.js"></script>
+    
+    <script src="./scripts/conffesionsScript.js"></script>
+    <script src="./scripts/lifefestylescript.js"></script>
+    <script src="./scripts/partnerscript.js"></script>
+    <script src="./scripts/script.js"></script>
+
+    
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+</body>
+
+</html>

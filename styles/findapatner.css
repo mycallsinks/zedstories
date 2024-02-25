@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+  }
+  
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+/* most used styles */
+:root {
+    --body-bg: #033a80;
+    --text-color: #000000;
+    --secondary-text-color: rgba(0, 0, 0, 0.6);
+    --primary-color: #2f88fcdf;
+    --primary-color: #2f89fc;
+  
+    /* --primary-color: #f6214b; */
+    --secondary-color: #0c75fb;
+    --sub-secondary-color: #61a6fd;
+    --text-font: 0.9rem;
+    --main-color: #ff8000;
+    --main-color:rgb(47, 136, 252);
+    --bg-color:rgba(47, 136, 252, 0.818);
+    --bg-color:rgba(47, 136, 252, 0.318);
+    --white-color: #fff;
+  }
+  
+  /* 9FA6B2 */
+  
+  .main_color{
+    /* background-color: #033a80 !important; */
+    background-color: #b9b9b9 !important;
+    background-color: var(--primary-color) !important;
+    /* background-color: var(--body-bg); */
+  }
+  
+  
+  button{
+    color: #fff !important;
+    background-color: #0c75fb !important;
+  }
+
+  a {
+    color: var(--secondary-text-color) !important;
+  }
+  
+  body {
+    background-color: var(--white-color);
+  }
+  
+  header {
+    min-width: 280px;
+    /* background-color: var(--white-color); */
+  }
+  .headers {
+    background-color: var(--white-color);
+    height: fit-content;
+    z-index: 1000;
+  }
+  /* universal styles */
+  
+
+  
+
+.home_about {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+  }
+  
+.home_about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  
+.home_about {
+  background-image: url("../assets/partner_default.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+section .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+}
+
+.wrapper p {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-size: .8rem;
+}

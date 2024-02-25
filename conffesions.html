@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Share your confessions and stories anonymously. Join others in opening up about your experiences.">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZedStories Confessions</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- fonts icons start-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
+
+
+    <!-- font family -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,450,500,520,550,600,700,900,1000">
+
+
+        <!-- Fredoka fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+        <!-- prompt family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- styles start-->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/animation.css">
+    <link rel="stylesheet" href="./styles/confessions.css">
+    <!-- styles end -->
+
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css">
+
+    <!-- jQuery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="hold_header headers  d-flex justify-content-center">
+        <header class="container-lg m-0">
+            <!-- <div class="first_header"> -->
+            <nav class="navbar">
+                <div class="container-fluid p-0">
+                    <div class="logo navbar-brand">
+                        <h1 class="doc_logo">
+                            <a href="./index.html">Zed<span id="special">Stories</span></a>
+                        </h1>
+                    </div>
+                    <div class="logo">
+                        <p class="lead fw-bold whats_trending">
+                            <!-- Lets hear it 😜 -->
+                        </p>
+                    </div>
+                </div>
+            </nav>
+            <!-- </div> -->
+
+            <!-- bootstrap nav bar -->
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid p-0">
+                    <!-- custome d-block d-md-none -->
+                    <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- custome d-block d-md-none -->
+                    <form class="d-flex d-block d-md-none" role="search">
+
+                        <input class="form-control me-2 border" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <!-- custome  d-none d-md-flex-->
+                    <div class="collapse navbar-collapse d-md-flex" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-sm-flex flex-md-row">
+                            <li class="nav-item ">
+                                <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./conffesions.html">CONFESSIONS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./findapartener.html">PARTNER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./lifestyle.html">LIFESTYLE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./makeapost.html">make a post</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./about.html">ABOUT</a>
+                            </li>
+                        </ul>
+                        <form class="d-none d-md-flex" role="search" onsubmit="search(event)">
+                            <input class="form-control me-2 searching_button" type="search" id="searchInput" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">
+                                Search
+                            </button>
+                        </form>
+
+                        
+                    </div>
+                    <!-- <div id="searchResults"></div> -->
+                </div>
+            </nav>
+        </header>
+    </div>
+   
+    <!-- navBar -->
+
+    <section class="home_about" id="home_about">
+        <div class="wrapper box">
+            <h1>CONFESIONS</h1>
+            <p>CATEGORY > CONFESIONS</p>
+            <p>Lets here the that dark secret</p>
+        </div>
+    </section>
+
+    <section class="container-lg articles">
+
+        <div class="container-lg">
+
+            <div class="row">
+                <div class="col-12 col-md-8 px-0">
+                    <div class="d-flex p-2 main_color text-white  my-md-0 ">Latest posts
+                    </div>
+                        <!-- card 1 -->
+                        <div class="card my-2">
+                            <!-- blog 1 -->
+                            <div class="row g-0 blog-post" data-blog-id="1">
+
+                                <div class="col-12 col-md-5">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/slept.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <!-- blog category -->
+                                            <h5 class="card-title">CONFESSIONS</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-md-7 p-1">
+                                    <div class="card-body m-0 p-2">
+                                        <!-- blog title -->
+                                        <h5 class="body_titles">
+                                            Story time of how I once slept with my stepfather( it only happened one
+                                            time)
+                                        </h5>
+
+                                        <!-- blog half story -->
+                                        <p class="card-text my-0 blog_story_half">
+                                            (F22)
+                                            Ok so my dad died in 2011 and my mother remarried 4 years later in 2015. She
+                                            was 39 at the time and he was 35. Before they got married, she'd always
+                                            complain about his infidelity. We'd even call her a cougar because he'd
+                                            always just ask her for money and manipulate her into thinking she actually
+                                            wanted to marry him( as a joke ofcourse). Once they got married, he moved in
+                                            with us. From then, my mum forbid us from ever talking about our biological
+                                            dad in the house, it got to the point where my mum even almost made cut ties
+                                            with our dad's side of the family. My mum's new husband would always look at
+                                            my sister and I in funny ways. Not gonna lie, he was good looking eish man.
+                                            One day I walked in on him in the bathroom with a hard on. Imwe his cock was
+                                            throbbing and I could tell he needed some help. He tried to resist at first
+                                            but we ended up fucking. Mind you this was in 2021 I waw 20 at the time. We
+                                            were all alone in the house and we basically fucked for the most part of the
+                                            day. We pretended like everything was normal when everyone got back home. He
+                                            really fucked the daylights out of me but I vowed to never do that again.
+                                            Till this day he still makes advances to try and fuck me. He slaps my ass
+                                            whenever he sees me and he gives me money and anything that I want. I don't
+                                            feel bad about it though cause I feel like mu mum deserves it for trying to
+                                            make my siblings and I forget all about our dad. I might even fuck him
+                                            again,who knows"
+                                            <span class="name_of_location">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                Supershine University
+                                            </span>
+                                        </p>
+
+                                        <a href="#" class="read-more" onclick="handleReadMoreClick(event)">Read More
+                                        </a>
+                                        <p class="card-text text-light comments_info"><small
+                                                class="text-body-secondary">
+                                                <!-- author and written date -->
+                                                <a href="#">
+                                                    <!-- fa user - author -->
+                                                    <i class="fa-solid fa-user">
+                                                        killer
+                                                    </i></a>
+                                                <a href="#">
+                                                    <i class="fa-solid   fa-calendar
+                                            blog_date">
+                                                        12 January 2024
+                                                    </i> </a>
+                                                <!-- comment reserved -->
+                                            </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="card my-2">
+                            <!-- blog 2 -->
+                            <div class="row g-0 blog-post" data-blog-id="2">
+                                <div class="col-12 col-md-5">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/relationshiosUnza.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <!-- blog category -->
+                                            <h5 class="card-title">CONFFESIONS</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-7 p-1">
+                                    <div class="card-body m-0 p-2">
+                                        <h5 class="body_titles">
+                                            <!-- blog title -->
+                                            Relationships and Guilt at UNZA
+                                        </h5>
+                                        <!-- blog half story -->
+                                        <p class="card-text my-0 blog_story_half">
+                                            (F18) I am in a relationship with a guy at UNZA,I don’t love him but he’s a
+                                            nice guy.I feel he is cheating on me though I absolutely have no proof,we
+                                            barely talk to each other and when we do,the conversations are dry and
+                                            boring.I want to break up with him but I am afraid he will hate me.I slept
+                                            with another guy,I refused to do it but he pressured me into it,I feel so
+                                            guilty because I don’t even love that guy,he likes me and I used to crush on
+                                            him at first but eventually I stopped and now he thinks I have feelings for
+                                            him.I need advice!!!
+                                            <span class="name_of_location">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                UNZA
+                                            </span>
+                                        </p>
+                                        <a href="#" class="read-more" onclick="handleReadMoreClick(event)">Read More
+                                        </a>
+                                        <p class="card-text text-light comments_info">
+
+                                            <small class="text-body-secondary">
+                                                <!-- author and written date -->
+                                                <a href="#">
+                                                    <!-- fa user - author -->
+                                                    <i class="fa-solid fa-user">
+                                                        bigmachine
+                                                    </i></a>
+                                                <a href="#">
+                                                    <i class="fa-solid   fa-calendar
+                                                         blog_date">
+                                                        20th March 2024
+                                                    </i> </a>
+                                                <!-- comment reserved -->
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-2">
+                            <!-- blog 3 -->
+                            <div class="row g-0 blog-post" data-blog-id="3">
+
+                                <div class="col-12 col-md-5">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/sleeping.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <!-- blog category -->
+                                            <h5 class="card-title">CONFESSION</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-md-7 p-1">
+                                    <div class="card-body m-0 p-2">
+                                        <!-- blog title -->
+                                        <h5 class="body_titles">
+                                            Caught in a Web of Secrets
+                                        </h5>
+
+                                        <!-- blog half story -->
+                                        <p class="card-text my-0 blog_story_half">
+                                            (F21) "I’m a 3rd year student and I’m doing my internship at a certain well known organization here in Lusaka. I’ve been sleeping with my boss and people in my office have started talking. Last week I heard one of them say they can’t wait for my boss’s wife to find out and embarrass me in front of everyone, but in reality I’m sleeping with both my boss and his wife, mostly the wife and we sometimes have threesomes. They pay me well and i enjoy the sessions. They asked my boyfriend could join us but I don't how to tell him."
+
+                                            <span class="name_of_location">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                ICU
+                                                Information and communications university.
+                                            </span>
+                                        </p>
+
+                                        <a href="#" class="read-more" onclick="handleReadMoreClick(event)">Read More
+                                        </a>
+                                        <p class="card-text text-light comments_info"><small
+                                                class="text-body-secondary">
+                                                <!-- author and written date -->
+                                                <a href="#">
+                                                    <!-- fa user - author -->
+                                                    <i class="fa-solid fa-user">
+                                                        killer
+                                                    </i></a>
+                                                <a href="#">
+                                                    <i class="fa-solid   fa-calendar
+                                            blog_date">
+                                                        12 January 2024
+                                                    </i> </a>
+                                                <!-- comment reserved -->
+                                            </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="card my-2">
+                            <!-- blog 4 -->
+                            <div class="row g-0 blog-post" data-blog-id="4">
+                                <div class="col-12 col-md-5">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/horny.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <!-- blog category -->
+                                            <h5 class="card-title">CONFESION</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-7 p-1">
+                                    <div class="card-body m-0 p-2">
+                                        <h5 class="body_titles">
+                                            <!-- blog title -->
+                                            Love and Desires
+                                        </h5>
+                                        <!-- blog half story -->
+                                        <p class="card-text my-0 blog_story_half">
+                                            (F18) "I always feel horny when I see my boyfriend's d*ck cos it's big and looks nice in colour n I feel like no man can be compared to what he has cos when it enters at times ilapata and that's what makes more horny than usual"
+                                            -Levy Mwanawasa 
+                                            (F20) "So I have a boyfriend yes but there is this girl whose a freshman at school and she has dreads she’s a stud guys I love that girl 😭I can’t get over the fact that she’s hot and it’s driving me crazy 
+                                            When am intimate with my boyfriend I imagine it’s her and not him I know it’s messed up and I need help what should I do "
+                                            -Nipa
+                                            (M24) "To those who in their relationship have taken a break before... 🙏 What usually becomes of a relationship after a break?
+                                            Chances ..?
+                                            Bati uza kuti tiyendeko pa break kuno..🥺
+                                            Honest opinion requested 🙏"
+
+                                            <span class="name_of_location">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                - Garden of Eden University 
+                                            </span>
+                                        </p>
+                                        <a href="#" class="read-more" onclick="handleReadMoreClick(event)">Read More
+                                        </a>
+                                        <p class="card-text text-light comments_info">
+
+                                            <small class="text-body-secondary">
+                                                <!-- author and written date -->
+                                                <a href="#">
+                                                    <!-- fa user - author -->
+                                                    <i class="fa-solid fa-user">
+                                                        bigmachine
+                                                    </i></a>
+                                                <a href="#">
+                                                    <i class="fa-solid   fa-calendar
+                                                         blog_date">
+                                                        20th March 2024
+                                                    </i> </a>
+                                                <!-- comment reserved -->
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="col-12 col-md-4  aside m-0">
+
+                    <div class="d-flex p-2 main_color text-white mb-2">Top Trending Story
+                    </div>
+                    <!-- small asides ones -->
+                    <!-- blog 4 -->
+                    <div class="card mb-2 blog-post" data-blog-id="4">
+                        <img src="./img/horny.jpg" class="card-img-top" alt="...">
+                        <div class="card-body m-0 p-0 mb-3">
+                            <!-- blog category -->
+                            <h5 class="card-title ">CONFESSIONS</h5>
+
+                            <!-- blog title here -->
+                            <h5 class="">
+                                <a href="#" class="body_titles" onclick="handleReadMoreClick(event)">Love and Desires
+                                </a>
+                            </h5>
+                            <!-- blog half story -->
+
+                            <!-- on  aside button the story will be displayed none -->
+                            <p class="card-text my-0 blog_story_half" style="display: none;">
+                                (F18) "I always feel horny when I see my boyfriend's d*ck cos it's big and looks nice in colour n I feel like no man can be compared to what he has cos when it enters at times ilapata and that's what makes more horny than usual" -Levy Mwanawasa (F20) "So I have a boyfriend yes but there is this girl whose a freshman at school and she has dreads she’s a stud guys I love that girl 😭I can’t get over the fact that she’s hot and it’s driving me crazy When am intimate with my boyfriend I imagine it’s her and not him I know it’s messed up and I need help what should I do " -Nipa (M24) "To those who in their relationship have taken a break before... 🙏 What usually becomes of a relationship after a break? Chances ..? Bati uza kuti tiyendeko pa break kuno..🥺 Honest opinion requested 🙏"
+
+                                <span class="name_of_location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    - Garden of Eden University
+                                </span>
+                            </p>
+
+                            <p class="card-text text-light comments_info">
+                                <small class="text-body-secondary">
+                                    <!-- author and written date -->
+                                    <a href="#">
+                                        <!-- fa user - author -->
+                                        <i class="fa-solid fa-user">
+                                            unknown
+                                        </i></a>
+                                    <a href="#">
+                                        <i class="fa-solid   fa-calendar
+                                             blog_date">
+                                            13 February 2024
+                                        </i> </a>
+                                    <!-- comment reserved -->
+                                </small>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 main_color text-white mb-2">What's Trending</div>
+                    <!-- card 1 -->
+                    <div class="card mb-3 small_cards">
+                        <!-- blog 5 -->
+                        <div class="row g-0 blog-post" data-blog-id="5">
+                            <div class="col-12 col-md-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./img/slept.jpg" class="card-img img-fluid" alt="...">
+                                    <div class="card-img-overlay">
+                                        <!-- blog category -->
+                                        <h5 class="card-title">CONFESIONS</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 p-0">
+                                <div class="card-body m-0 ps-2">
+                                    <!-- blog title -->
+
+                                    <h5 class="m-0 p-0">
+                                        <a href="#" class="body_titles" onclick="handleReadMoreClick(event)">
+                                            Story time of how I once slept with my stepfather
+                                        </a>
+                                    </h5>
+
+                                    <!-- blog half story -->
+                                    <p class="card-text my-0 blog_story_half" style="display: none;">
+                                           (F21) "Hey guys. 
+So I met a very good looking guy online and we instantly clicked,we met in person and everything went well but what’s crazy is that he wanted to sleep with me the same day that we met and I thought to myself “that’s crazy” but I did not want to ruin everything buy saying something bad or yelling at him so I just lied to him that I’m on my period. A few minutes later the ohn started acting like his friends were calling him to go get stuff and what not “I knew it was just a way of just leaving” then I was like cool.
+Fast forward me and this guy were now in a situationship and we did what couples do cute stuff,we shared good moments together and it was all good but he was always asking for money and I gave him when I had it,this guy never gave me any money from the time we started talking till the time we broke up.
+He loved sex man all the damn time it was just sex and I got tired of it,I decided to minimize man because wtfff.
+So then this boy became cold towards me just a few days after I stopped giving him money and sex 😂 he then started hanging with different girls and posting them then I just knew they are probably in the same situation so then he would constantly get mad at me easily or some shit and gaslighting me blah blah blah so I left him.
+That’s when I learnt that an Exsay is an Exsay with the dads car and and iPhone 12 kaya ngati ni 13 but never has money for gas or bundles.
+After this experience I was broken and depressed cause he even used my mental health issues against me,I realized they I opened up to an idiot 
+And yes I’m the stupid one for Ignoring the red flags the first day we met.
+I don’t blame him tho I have a nice body time time and I gave him access 😭😂
+Elo niwapa unza mambala uja I wish I could expose him so that people can stay woke🤧"
+Ziths 
+                                        
+
+                                        <span class="name_of_location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Copperbelt University
+                                        </span>
+                                    </p>
+                                    <p class="card-text text-light comments_info ">
+                                        <small class="text-body-secondary p-0 m-0">
+                                            <!-- author and written date -->
+                                            <a href="#">
+                                                <!-- fa user - author -->
+                                                <i class="fa-solid fa-user">
+                                                    unknown
+                                                </i></a>
+                                            <a href="#">
+                                                <i class="fa-solid   fa-calendar
+                                                         blog_date">
+                                                    13 February 2024
+                                                </i> </a>
+                                            <!-- comment reserved -->
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2  -->
+                    <div class="card mb-3 small_cards">
+                        <!-- blog 6 -->
+                        <div class="row g-0 blog-post" data-blog-id="6">
+                            <div class="col-12 col-md-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./img/online.png" class="card-img img-fluid" alt="...">
+                                    <div class="card-img-overlay">
+                                        <!-- blog category -->
+                                        <h5 class="card-title">LIFESTYLE</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 p-0">
+                                <div class="card-body m-0 ps-2">
+                                    <!-- blog title -->
+
+                                    <h5 class="m-0 p-0">
+                                        <a href="#" class="body_titles" onclick="handleReadMoreClick(event)">
+                                            Lessons Learned: Navigating Relationships Online and Offline
+                                        </a>
+                                    </h5>
+
+                                    <!-- blog half story -->
+                                    <p class="card-text my-0 blog_story_half" style="display: none;">
+                                        (F21) "Hey guys. 
+So I met a very good looking guy online and we instantly clicked,we met in person and everything went well but what’s crazy is that he wanted to sleep with me the same day that we met and I thought to myself “that’s crazy” but I did not want to ruin everything buy saying something bad or yelling at him so I just lied to him that I’m on my period. A few minutes later the ohn started acting like his friends were calling him to go get stuff and what not “I knew it was just a way of just leaving” then I was like cool.
+Fast forward me and this guy were now in a situationship and we did what couples do cute stuff,we shared good moments together and it was all good but he was always asking for money and I gave him when I had it,this guy never gave me any money from the time we started talking till the time we broke up.
+He loved sex man all the damn time it was just sex and I got tired of it,I decided to minimize man because wtfff.
+So then this boy became cold towards me just a few days after I stopped giving him money and sex 😂 he then started hanging with different girls and posting them then I just knew they are probably in the same situation so then he would constantly get mad at me easily or some shit and gaslighting me blah blah blah so I left him.
+That’s when I learnt that an Exsay is an Exsay with the dads car and and iPhone 12 kaya ngati ni 13 but never has money for gas or bundles.
+After this experience I was broken and depressed cause he even used my mental health issues against me,I realized they I opened up to an idiot 
+And yes I’m the stupid one for Ignoring the red flags the first day we met.
+I don’t blame him tho I have a nice body time time and I gave him access 😭😂
+Elo niwapa unza mambala uja I wish I could expose him so that people can stay woke🤧"
+
+
+                                        <span class="name_of_location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Ziths 
+                                        </span>
+                                    </p>
+                                    <p class="card-text text-light comments_info ">
+                                        <small class="text-body-secondary p-0 m-0">
+                                            <!-- author and written date -->
+                                            <a href="#">
+                                                <!-- fa user - author -->
+                                                <i class="fa-solid fa-user">
+                                                    unknown
+                                                </i></a>
+                                            <a href="#">
+                                                <i class="fa-solid   fa-calendar
+                                                         blog_date">
+                                                    11 February 2024
+                                                </i> </a>
+                                            <!-- comment reserved -->
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card mb-3 small_cards">
+                        <!-- blog 7 -->
+                        <div class="row g-0 blog-post" data-blog-id="9">
+                            <div class="col-12 col-md-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./img/love.jpg" class="card-img img-fluid" alt="...">
+                                    <div class="card-img-overlay">
+                                        <!-- blog category -->
+                                        <h5 class="card-title">CONFFESIONS</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 p-0">
+                                <div class="card-body m-0 ps-2">
+                                    <!-- blog title -->
+
+                                    <h5 class="m-0 p-0">
+                                        <a href="#" class="body_titles" onclick="handleReadMoreClick(event)">
+                                            Questioning the Relationship: Is Love Enough?
+                                        </a>
+                                    </h5>
+
+                                    <!-- blog half story -->
+                                    <p class="card-text my-0 blog_story_half" style="display: none;">
+                                        Tell ba admin to post for me 
+
+So I've been dating this guy for a few months now, ever since we started dating he has been very distant, he doesn't have time for me, and I'm also losing interest, we'd go days without talking and when I try to talk about our current situation , he just reassures me that he is just really busy with work but he really loves me and wants this to work and it will work..
+
+Now my worry is if I'm not enjoying the early stages of our relationship, what more the future, I do love him but I don't think love is enough, I don't even see him as a friend because I can't talk to him about anything....
+
+Do you people think it's worth it to keep hoping for the best and wait...
+I'm tired of being loyal to a person I can't even enjoy a simple conversation about how our days have been.... 
+Am I being unreasonable?😞
+
+                                        <span class="name_of_location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            MU- abroad university
+                                        </span>
+                                    </p>
+                                    <p class="card-text text-light comments_info ">
+                                        <small class="text-body-secondary p-0 m-0">
+                                            <!-- author and written date -->
+                                            <a href="#">
+                                                <!-- fa user - author -->
+                                                <i class="fa-solid fa-user">
+                                                    unknown
+                                                </i></a>
+                                            <a href="#">
+                                                <i class="fa-solid   fa-calendar
+                                                         blog_date">
+                                                    1 February 2024
+                                                </i> </a>
+                                            <!-- comment reserved -->
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="container-lg articles">
+
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-12 col-md-8 px-0">
+                    <div class="d-flex p-2 main_color text-white mb-2 ">Orther posts</div>
+                    
+                    <!-- card 1 -->
+                    <div class="card my-2">
+                        <!-- blog 8 -->
+                        <div class="row g-0 blog-post" data-blog-id="8">
+
+                            <div class="col-12 col-md-5">
+                                <div class="card text-bg-dark">
+                                    <img src="./img/fighting.avif" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <!-- blog category -->
+                                        <h5 class="card-title">CONFESSIONS</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-md-7 p-1">
+                                <div class="card-body m-0 p-2">
+                                    <!-- blog title -->
+                                    <h5 class="body_titles">
+                                        Conflicting Signals: Understanding Boundaries in Relationships
+                                    </h5>
+
+                                    <!-- blog half story -->
+                                    <p class="card-text my-0 blog_story_half">
+                                        
+                                        So ba admin this is my situation,
+
+There's this girl I've been in a relationship for a year now. However, when it comes to sex and things like kisses, she refuses saying she's saving for marriage which I understand it's ok with me.
+
+Now I found out that she had sex with a guy a month ago, confronted her and she apologized saying it was just an accident and I forgave her.
+
+Last week it was just her and me in my room, made some advances and she refused saying after marriage. 
+
+Now I don't understand why she'd have sex with another guy probably even more cos I've heard rumors about refuse to do it with me, her boyfriend who is invented in her.
+                                        <span class="name_of_location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Mulungushi University
+                                        </span>
+                                    </p>
+
+                                    <a href="#" class="read-more" onclick="handleReadMoreClick(event)">Read More
+                                    </a>
+                                    <p class="card-text text-light comments_info"><small
+                                            class="text-body-secondary">
+                                            <!-- author and written date -->
+                                            <a href="#">
+                                                <!-- fa user - author -->
+                                                <i class="fa-solid fa-user">
+                                                    mussang
+                                                </i></a>
+                                            <a href="#">
+                                                <i class="fa-solid   fa-calendar
+                                        blog_date">
+                                                    12 January 2024
+                                                </i> </a>
+                                            <!-- comment reserved -->
+                                        </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card my-2">
+                        <!-- blog 9 -->
+                        <div class="row g-0 blog-post" data-blog-id="9">
+                            <div class="col-12 col-md-5">
+                                <div class="card text-bg-dark">
+                                    <img src="./img/tiredofschool.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <!-- blog category -->
+                                        <h5 class="card-title">KONFESION</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7 p-1">
+                                <div class="card-body m-0 p-2">
+                                    <h5 class="body_titles">
+                                        <!-- blog title -->
+                                       School is a Kamushombo kaku last
+                                    </h5>
+                                    <!-- blog half story -->
+                                    <p class="card-text my-0 blog_story_half">
+                                        (M22) "School is like ka mushombo Kaku last,first kazavuta kuchoka it'll be going back and forth as if you're fucking yourself with your own poo then it drops okay you're now relieved you can relax the pressure is gone it's now time to flash then boom kakana kuenda keve kasala looking at you like you're a mazasaka but with more effort it clears kaza ends. School will fuck you like ka mushombo Kaku last but never give up keeping working hard and you'll clear the ka mushombo.
+Never give up guys💪💪"
+                                        <span class="name_of_location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            UNZA
+                                        </span>
+                                    </p>
+                                    <a href="#" class="read-more" onclick="handleReadMoreClick(event)">Read More
+                                    </a>
+                                    <p class="card-text text-light comments_info">
+
+                                        <small class="text-body-secondary">
+                                            <!-- author and written date -->
+                                            <a href="#">
+                                                <!-- fa user - author -->
+                                                <i class="fa-solid fa-user">
+                                                    bigmachine
+                                                </i></a>
+                                            <a href="#">
+                                                <i class="fa-solid   fa-calendar
+                                                     blog_date">
+                                                    20th March 2024
+                                                </i> </a>
+                                            <!-- comment reserved -->
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-2">
+                        <!-- blog 10 -->
+                        <div class="row g-0 blog-post" data-blog-id="10">
+
+                            <div class="col-12 col-md-5">
+                                <div class="card text-bg-dark">
+                                    <img src="./img/tiredofschool.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <!-- blog category -->
+                                        <h5 class="card-title">CONFESSION</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-md-7 p-1">
+                                <div class="card-body m-0 p-2">
+                                    <!-- blog title -->
+                                    <h5 class="body_titles">
+                                        Struggling at University: Finding Hope in Dark Times
+                                    </h5>
+
+                                    <!-- blog half story -->
+                                    <p class="card-text my-0 blog_story_half">
+                                        (F21)"I have failed at University for the 4 times now. Honestly I have tried and I feel drained. I  did all I could but it seems it's never enough.
+I have tried in all I could and all my parents say is your friends are moving forward and look at you, you are a failure, you can never teach your siblings anything, you are an embarrassment. Honestly I don't blame them, which parent would want to see there child fail after all the money they have spent. 
+I have lost the little hope I had left and the only thing on my mind is I am a failure and shameful....  The only thing I feel like doing at this point is committing suicide.  Even the person that was paying for me has given up...
+ In all honesty I want to go to school and graduate just so I could make my mother proud of me for once but I have failed. 
+I am not envious but it breaks my heart to see someone I started with, ahead of me and I keep asking myself ""what is wrong with me?""
+I have tried and now I don't even feel useless"
+
+                                        <span class="name_of_location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Levy Mwanawasa
+                                        </span>
+                                    </p>
+
+                                    <a href="#" class="read-more" onclick="handleReadMoreClick(event)">Read More
+                                    </a>
+                                    <p class="card-text text-light comments_info"><small
+                                            class="text-body-secondary">
+                                            <!-- author and written date -->
+                                            <a href="#">
+                                                <!-- fa user - author -->
+                                                <i class="fa-solid fa-user">
+                                                    killer
+                                                </i></a>
+                                            <a href="#">
+                                                <i class="fa-solid   fa-calendar
+                                        blog_date">
+                                                    12 January 2024
+                                                </i> </a>
+                                            <!-- comment reserved -->
+                                        </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card my-2">
+                        <!-- blog 11 -->
+                        <div class="row g-0 blog-post" data-blog-id="11">
+                            <div class="col-12 col-md-5">
+                                <div class="card text-bg-dark">
+                                    <img src="./img/loveasking.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <!-- blog category -->
+                                        <h5 class="card-title">CONFESIONS</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7 p-1">
+                                <div class="card-body m-0 p-2">
+                                    <h5 class="body_titles">
+                                        <!-- blog title -->
+                                        Reflecting on Relationships and Beliefs: Questions Worth Asking
+                                    </h5>
+                                    <!-- blog half story -->
+                                    <p class="card-text my-0 blog_story_half">
+                                        Good afternoon everyone. 
+
+Okay, lets face it, no one is interested  in the greetings but what I will have to say.  So let's dive in.
+
+ Ask yourself some questions:
+
+Why do you want to be in a relationship? Why? Is it because  its sounds nice that you have a relationship  or you just want to try it out or it's just a fantasy.. 
+next ask yourself  if, you have the skills  neccessary  to maintain  the relationship? Do you have them?  We know we all have feelings  but that's not a good  reason  to start dating and engaging  in illicit activities. 
+
+The most important  question  is why you really  want  a relationship?  Are you scared  of being  alone? 
+
+ Then ask yourself  what a healthy  relationship  is to you. Differentiate  toxic  and healthy  relationships.  
+
+Is your relationship  currently  in line with who you want to become. 
+
+ Why are you a Christian?  Its because  your were colonized  be Christians or you were just born into  it..  
+What you may not know is that, countries  that were colonized  be other religions  have those religions  being dominant  in there countries. 
+I know some of you will  be like we have heard  or this before and we are what we are, but are your really  what you are or you have been  made into what you have become  and if so can't  you change? 
+Some will read this and feel inspired or motivated    and some will feel like am just wasting  their  time.  But if am really  really  wasting  your time as you feel why do you feel upset or resentful? Why?.. 
+
+Thanks for you time people. 
+
+I believe  despite  everything  that has taken a tore in your life  you and only  you can make a change.. you have the ability, you have the brains and you can improve.. if and only if you believe  you can change.
+                                        <span class="name_of_location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            MU
+                                        </span>
+                                    </p>
+                                    <a href="#" class="read-more" onclick="handleReadMoreClick(event)">Read More
+                                    </a>
+                                    <p class="card-text text-light comments_info">
+
+                                        <small class="text-body-secondary">
+                                            <!-- author and written date -->
+                                            <a href="#">
+                                                <!-- fa user - author -->
+                                                <i class="fa-solid fa-user">
+                                                    unknown
+                                                </i></a>
+                                            <a href="#">
+                                                <i class="fa-solid   fa-calendar
+                                                     blog_date">
+                                                    20th February 2024
+                                                </i> </a>
+                                            <!-- comment reserved -->
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4  aside m-0">
+                    <div class="d-flex p-2 main_color text-white mb-2">Advertise your bussiness here</div>
+
+                    <!-- adverts for now -->
+
+                    <div class="card mb-3 advert_card">
+                        <img src="./assets/advert_image.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fiero Technologies</h5>
+                            <p class="card-text">
+                                Elavate your online presence to the new heights. We design in custom web solutions
+                                tailored to your unique need
+                            </p>
+                            <a href="https://michaelsinkamba.com/" class="btn btn-primary advert_link" target="_blank"
+                            >Contact Fiero Technologies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_wrapper">
+            <div class="first">
+                <div class="logo">
+                     <h1 class="doc_logo">
+                            <a href="./index.html"><span id="special">Zed</span><span id="special2">Stories</span></a>
+                     </h1>
+                    <p>ZedStories: Where Confessions, Partnerships, and Lifestyle Collide</p>
+                </div>
+
+                <div class="have_questions">
+                    <h3>Have Questions about  <a href="./index.html"><span id="special">Zed</span><span id="special2">Stories</span></a></h3>
+                    <ul>
+                        <li class="fa-fade">
+                            <i class="fa-solid fa-globe"></i>
+                            <a href="https://michaelsinkamba.com/">michaelsinkamba.com</a>
+                        </li>
+                        <li class="fa-fade">
+                            <i class="fa-solid fa-phone"></i>
+                            +260 974286888
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second">
+                <div class="links">
+                    <h3>Quick Links</h3>
+                    <ul>
+ 
+                        <li class="nav-item ">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class=" active" aria-current="page" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class="" href="./conffesions.html">CONFESSIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class=" active" aria-current="page" href="./findapartener.html">PARTNER</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class="" href="./lifestyle.html">LIFESTYLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class="" href="./makeapost.html">make a post</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+                                </i> 
+                            <a class=" active" aria-current="page" href="./about.html">ABOUT</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sumary_services">
+                    <h3>Make a post</h3>
+                    <ul>
+                        <li>
+                            <a href="./makeapost.html">
+                                <i class="fa-solid fa-beat-fade fa-arrow-right"></i>conffesions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./makeapost.html">
+                                <i class="fa-solid fa-beat-fade fa-arrow-right"></i>lifestyle
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./makeapost.html">
+                                <i class="fa-solid fa-beat-fade fa-arrow-right"></i>partner
+                                mology
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="third">
+                <div class="our_recent_blog">
+                    <h3>Recent Blog</h3>
+                    <div class="first_recent_blog">
+                        <div class="image one">
+
+                        </div>
+                        <div class="contents">
+                            <p class="content">
+                                MODERN DATING GAME
+                            </p>
+                            <p class="links">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Feb 03, 2024 <br>
+                                <i class="fa-solid fa-user-tie"></i> Unknown
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="second_recent_blog">
+                        <div class="image two">
+
+                        </div>
+                        <div class="contents">
+                            <p class="content">
+                                THE SILENT ECHOES OF PARENTAL ABSENCE
+                            </p>
+                            <p class="links">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Feb 13, 2024 <br>
+                                <i class="fa-solid fa-user-tie"></i> Admin
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth">
+                <div class="subscribe">
+                    <h3 class="open">Subscribe</h3>
+                    <p>
+                        get  notified about the latest conffesions
+                    </p>
+                    <form action="#" method="">
+                        <input type="email" name="email" id="email" placeholder="Enter email address" required>
+                        <button onclick="changeSub()">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="all_rights">
+
+            <p class="desktop_view">
+                Copyright ©2024 All rights reserved
+            <p id="tab_break">
+                | This template is developed  By <span>- </span>
+            <p class="phone_break">
+                
+                Michael Sinkamba
+            </p>
+            </p>
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- <script src="./scripts/script.js"></script> -->
+
+    <script src="./scripts/animation.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

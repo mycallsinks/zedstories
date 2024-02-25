@@ -1,0 +1,50 @@
+.links{
+    margin: 1rem .2rem !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.whole_story p{
+    line-height: 2.3rem;
+    padding: 0 1rem;
+}
+
+.whole_story p #firstLetter{
+    font-size: 1.7rem;
+}
+
+.home_about .blot-title{
+    text-transform: capitalize !important;
+}
+
+  
+
+section .wrapper {
+    /* height: 70% !important; */
+}
+
+section .blog-title{
+    font-size: 2.5rem !important;
+}
+
+
+@media all and (max-width:560px){
+    section .blog-title{
+        font-size: 1.5rem !important;
+    }
+
+    section .wrapper {
+        /* height: 50% !important; */
+    }
+}
+
+
+.card {
+    margin-bottom: 10px;
+}
+
+.small_cards .card-img{
+    margin: 0 !important;
+
+}
