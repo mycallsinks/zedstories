@@ -169,9 +169,12 @@ body{
   padding: 0rem .4rem;
 }
 
-.navbar ul li a{
-  
+@media screen and (max-width:767px){
+  .navbar-nav  li a{ 
+    padding: .4rem .2rem !important;
+  }
 }
+
 
 .card:hover{
   /* background-color: #033a80; */
