@@ -75,6 +75,5 @@ function validateForm() {
         alert("Name and email are required fields.");
         return false;
     }
-
     return true;
 }
