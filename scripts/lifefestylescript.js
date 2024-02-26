@@ -66,15 +66,15 @@ lifestyleForm.addEventListener("submit", e => {
     });
 });
 
-// validation
-// function validateForm() {
-//     var name = document.getElementById("user_name").value;
-//     var email = document.getElementById("user_email").value;
+validation
+function validateForm() {
+    var name = document.getElementById("user_name").value;
+    var email = document.getElementById("user_email").value;
 
-//     if (name === "" || email === "") {
-//         alert("Name and email are required fields.");
-//         return false;
-//     }
+    if (name === "" || email === "") {
+        alert("Name and email are required fields.");
+        return false;
+    }
 
-//     return true;
-// }
+    return true;
+}
