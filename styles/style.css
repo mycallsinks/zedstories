@@ -865,7 +865,8 @@ gap: 17px;
 
 .accordion-button:focus {
   box-shadow: none !important;
-  border: 2px solid  #ff8000 !important;
+  background-color: #ff8000 !important;
+  transition: all .3s ease-in-out;
 }
 
 
