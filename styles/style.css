@@ -883,3 +883,8 @@ gap: 17px;
 }
 
 
+.home_section_aside_wide img{
+  max-height: 225px !important;
+}
+
+
