@@ -115,15 +115,27 @@ function displaySearchResults(results) {
 
 var subBtn = document.querySelector('.subscribe button');
 
-    function changeSub() {
-        event.preventDefault();
+function changeSub() {
+    event.preventDefault();
 
-        // alert if email not filled 
-        var emailInput = document.getElementById('email');
-        //check is worked
-        if (emailInput.value.trim() !== "") {
-            subBtn.innerHTML = 'Subscribed Brah Thanks!';
-        } else {
-            alert('Please enter your email address.');
-        }
+    // alert if email not filled 
+    var emailInput = document.getElementById('email');
+    var email = emailInput.value.trim();
+
+    // check if email is not empty and contains '@'
+    if (email !== "" && email.includes('@')) {
+        subBtn.innerHTML = 'Subscribing...';
+
+        // simulate a delay of 5 seconds (5000 milliseconds) and then change the text
+        setTimeout(function() {
+            subBtn.innerHTML = 'Subscribed Successfully!';
+            // revert back to "Subscribe" after 5 seconds
+            setTimeout(function() {
+                subBtn.innerHTML = 'Subscribe';
+            }, 3000);
+        }, 2000);
+    } else {
+        alert('Please enter a valid email address.');
     }
+}
+
