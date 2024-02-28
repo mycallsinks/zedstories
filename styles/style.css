@@ -884,8 +884,52 @@ gap: 17px;
 }
 
 
-.home_section_aside_wide img{
-  max-height: 225px !important;
+
+
+
+
+/* aside cards , those small card should have some mac height of the images thats after 570px bove above medium md
+ */
+
+
+.big_articles img{
+  max-height: 200px !important;
+  padding: 0 !important;
 }
 
 
+ @media screen and (min-width:768px) {
+  .small_cards img{
+    max-height: 130px !important;
+  }
+
+  .home_section_aside_wide img{
+    max-height: 190px !important;
+  }
+ }
+
+ @media screen and (min-width:840px) {
+  .home_section_aside_wide img{
+    max-height: 200px !important;
+  }
+
+ }
+
+ @media screen and (min-width:860px) {
+
+
+  .home_section_aside_wide img{
+    max-height: 210px !important;
+  }
+
+ }
+
+ @media screen and (min-width:880px) {
+
+
+  .home_section_aside_wide img{
+    max-height: 220px !important;
+  }
+
+
+ }
