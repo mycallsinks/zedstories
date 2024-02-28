@@ -155,7 +155,6 @@ section .wrapper {
 .accordion-button:active,
 .accordion-button:focus {
     border: none !important;
-    /* You can also add any other styling you want here */
 }
 
 

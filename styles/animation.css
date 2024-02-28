@@ -1,11 +1,4 @@
-/* 
-.headers{
-  position: fixed;
-  z-index: 1000 !important;
-  width: 100% !important; 
-  margin: 0 auto !important;
-  transition: all 0.2s ease-in-out;
-} */
+
 
 
 .headers {
@@ -16,15 +9,11 @@
   transition: all 0.2s ease-in-out;
 }
 
-
 .fixed {
   position: fixed; /* After scrolling, fixed position */
   top: 0;
   left: 0;
 }
-
-
-
 
 /* for all sections */
 
