@@ -35,7 +35,7 @@ lifestyleForm.addEventListener("submit", e => {
     if (imageFile) {
         // Assuming the image is hosted somewhere accessible online
         // Replace 'YOUR_IMAGE_URL' with the actual URL of the image
-        inputFields['image'] = 'YOUR_IMAGE_URL';
+        inputFields['image'] = imageFile.value;
     }
 
     // send the email (adding service , template id and input fields)
@@ -66,7 +66,7 @@ lifestyleForm.addEventListener("submit", e => {
     });
 });
 
-validation
+// validation
 function validateForm() {
     var name = document.getElementById("user_name").value;
     var email = document.getElementById("user_email").value;
