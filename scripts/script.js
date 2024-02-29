@@ -113,9 +113,10 @@ function displaySearchResults(results) {
 // lifestyle form
 
 
-var subBtn = document.querySelector('.subscribe button');
+
 
 function changeSub() {
+    var subBtn = document.querySelector('.subscribe button');
     event.preventDefault();
 
     // alert if email not filled 

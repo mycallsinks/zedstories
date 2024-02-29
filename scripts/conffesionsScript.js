@@ -24,18 +24,18 @@ contactForm.addEventListener("submit", e => {
     // get all input field values
     const inputFields = {
         name: contactForm.querySelector('.conffesions_form .username').value,
-        email: contactForm.querySelector('.conffesions_form .email_address').value,
+        // email: contactForm.querySelector('.conffesions_form .email_address').value,
         location: contactForm.querySelector('.conffesions_form .location').value,
         message: contactForm.querySelector('.conffesions_form .message').value
     };
 
     // Get the image file
-    const imageFile = contactForm.querySelector('.conffesions_form .images').files[0];
+    // const imageFile = contactForm.querySelector('.conffesions_form .images').files[0];
     
     // Prepare the image data to be sent as an attachment
-    if (imageFile) {
-        inputFields['image'] = imageFile;
-    }
+    // if (imageFile) {
+    //     inputFields['image'] = imageFile;
+    // }
 
     // send the email (adding service , template id and input fields)
     emailjs.send(conffessserviceID, conffesstemplateID, inputFields)

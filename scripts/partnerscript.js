@@ -22,22 +22,22 @@ partnerForm.addEventListener("submit", e => {
         fullnames: partnerForm.querySelector('.partner_form .username').value,
         location: partnerForm.querySelector('.partner_form .location').value,
         typegirlorboy: partnerForm.querySelector('.partner_form .typegirlorboy').value,
-        email_adress: partnerForm.querySelector('.partner_form .email_adress').value,
+        // email_adress: partnerForm.querySelector('.partner_form .email_adress').value,
         phonenumber: partnerForm.querySelector('.partner_form .phoneNumber').value,
         partner_message: partnerForm.querySelector('.partner_form .partner_message').value
     };
 
     // Get the image files
-    const imageFiles = partnerForm.querySelector('.partner_form .images').files;
+    // const imageFiles = partnerForm.querySelector('.partner_form .images').files;
     
     // Prepare the image data to be sent as an attachment
-    if (imageFiles.length > 0) {
-        // Assuming the images are hosted somewhere accessible online
-        // You can loop through the files and construct URLs or use other methods to handle multiple images
-        // For demonstration, let's assume only one image is sent
-        const imageUrl = 'YOUR_IMAGE_URL'; // Replace 'YOUR_IMAGE_URL' with the actual URL of the image
-        inputFields['images'] = imageUrl;
-    }
+    // if (imageFiles.length > 0) {
+    //     // Assuming the images are hosted somewhere accessible online
+    //     // You can loop through the files and construct URLs or use other methods to handle multiple images
+    //     // For demonstration, let's assume only one image is sent
+    //     const imageUrl = 'YOUR_IMAGE_URL'; // Replace 'YOUR_IMAGE_URL' with the actual URL of the image
+    //     inputFields['images'] = imageUrl;
+    // }
 
     // send the email (adding service, template id, and input fields)
     emailjs.send(partnerserviceID, partnertemplateID, inputFields)

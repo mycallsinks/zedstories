@@ -21,7 +21,7 @@ lifestyleForm.addEventListener("submit", e => {
     // get all input field values
     const inputFields = {
         name: lifestyleForm.querySelector('.lifestyle_form .username').value,
-        email: lifestyleForm.querySelector('.lifestyle_form .email_adress').value,
+        // email: lifestyleForm.querySelector('.lifestyle_form .email_adress').value,
         location: lifestyleForm.querySelector('.lifestyle_form .location').value,
         tittle: lifestyleForm.querySelector('.lifestyle_form .tittle').value,
         phoneNumber: lifestyleForm.querySelector('.lifestyle_form .phoneNumber').value,
